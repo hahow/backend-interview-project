@@ -7,7 +7,7 @@ const { Course, Lecture } = require("./models");
 
 const app = express();
 
-app.get("/lectures", async (req, res, next) => {
+app.get("/courses", async (req, res, next) => {
   try {
     let courses = await Course.find({})
       .lean()
